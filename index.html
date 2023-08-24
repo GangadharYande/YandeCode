@@ -5,68 +5,63 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Yande X</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-             
-            </ul>
-          </div>
+            <a class="navbar-brand" href="#">YandeCode</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown link
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Blog</a></li>
+                            <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                            <li><a class="dropdown-item" href="#">Get Quote</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
-
-    <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-primary">Left</button>
-        <button type="button" class="btn btn-primary">Middle</button>
-        <button type="button" class="btn btn-primary">Right</button>
-    </div>
-
-
-    <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
-    <div class="p-3 mb-2 bg-primary-subtle text-emphasis-primary">.bg-primary-subtle</div>
-    <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
-    <div class="p-3 mb-2 bg-secondary-subtle text-emphasis-secondary">.bg-secondary-subtle</div>
-    <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
-    <div class="p-3 mb-2 bg-success-subtle text-emphasis-success">.bg-success-subtle</div>
-    <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
-    <div class="p-3 mb-2 bg-danger-subtle text-emphasis-danger">.bg-danger-subtle</div>
-    <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
-    <div class="p-3 mb-2 bg-warning-subtle text-emphasis-warning">.bg-warning-subtle</div>
-    <div class="p-3 mb-2 bg-info text-dark">.bg-info</div>
-    <div class="p-3 mb-2 bg-info-subtle text-emphasis-info">.bg-info-subtle</div>
-    <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
-    <div class="p-3 mb-2 bg-light-subtle text-emphasis-light">.bg-light-subtle</div>
-    <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
-    <div class="p-3 mb-2 bg-dark-subtle text-emphasis-dark">.bg-dark-subtle</div>
-    <p class="p-3 mb-2 bg-body-secondary">.bg-body-secondary</p>
-    <p class="p-3 mb-2 bg-body-tertiary">.bg-body-tertiary</p>
-
-    <div class="p-3 mb-2 bg-body text-body">.bg-body</div>
-    <div class="p-3 mb-2 bg-black text-white">.bg-black</div>
-    <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
-    <div class="p-3 mb-2 bg-transparent text-body">.bg-transparent</div>
-    <span class="border">Gangadhar</span>
-    <span class="border-top">Killer</span>
-    <span class="border-end">Sameer</span>
-    <span class="border-bottom">Zammer</span>
-    <span class="border-start">Jiio</span>
+    </nav>
+    <form>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
