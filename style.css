@@ -1,4 +1,16 @@
-span{
+.navbar-nav{
+    display: flex;
     text-align: center;
-    tab-size: 2px solid yellow;
+    
 }
+.container-fluid{
+font-size: 41px;
+text-align: center;
+
+}
+
+.navbar-brand{
+    font-size: 100px;
+}
+
+.nav
